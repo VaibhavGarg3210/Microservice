@@ -1,9 +1,6 @@
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
+/bin/**	
 ### STS ###
 .apt_generated
 .classpath
@@ -12,12 +9,14 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
+.gitignore
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
+.class
+/bin/*
 
 ### NetBeans ###
 /nbproject/private/

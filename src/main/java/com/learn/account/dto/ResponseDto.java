@@ -1,17 +1,15 @@
 package com.learn.account.dto;
 
-import java.time.LocalDateTime;
-
-import org.springframework.http.HttpStatus;
-
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
+@Schema(description = "Schema to hold successful response information",name = "Response")
 public class ResponseDto {
-	private String apiPath;
-	private HttpStatus errorCode;
-	private String errorMessage;
-	private LocalDateTime errorTime;
+	@Schema(description = "Status Coden in the	 Response",example = "200")
+	private String status;
+	@Schema(description = "Status message in the	 Response",example = "Request processed successful")
+	private String message;
 }
